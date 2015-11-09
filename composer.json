@@ -1,0 +1,20 @@
+{
+    "name": "blupl/securex",
+    "description": "Security Extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahsanul Kabir",
+            "email": "ratulx00@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+      "classmap": [
+        "resources/database/migrations"
+      ],
+      "psr-4": {
+        "Blupl\\Securex\\" : "src/"
+      }
+    }
+}

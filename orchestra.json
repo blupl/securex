@@ -1,0 +1,13 @@
+{
+    "name": "Securex",
+    "description": "Security Extension",
+    "author": "Ahsanul Kabir",
+    "url": "https://github.com/",
+    "version": "1.0.0",
+    "config": {
+        "handles": "securex"
+    },
+    "provides": [
+        "Blupl\\Securex\\SecurexServiceProvider"
+    ]
+}
