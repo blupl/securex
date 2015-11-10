@@ -11,7 +11,7 @@
             @endforeach
         </div>
     @endif
-{!! Form::open(['url'=>handles('security/member/registration'), 'files'=>true]) !!}
+{!! Form::open(['url'=>handles('securex/member/registration'), 'files'=>true]) !!}
 {!! Form::hidden('user_id', Auth::user()->id) !!}
 
 <fieldset>

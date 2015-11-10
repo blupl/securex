@@ -31,7 +31,6 @@ class ApprovalController extends AdminController
 
     }
 
-
     /**
      * Show a role.
      */
@@ -49,7 +48,6 @@ class ApprovalController extends AdminController
     {
         $member = Securex::find($memberID);
 
-
         if($member != null && $member->status == 0) {
             return view('blupl/securex::approval.member', compact('member'));
         }else {
@@ -62,8 +60,6 @@ class ApprovalController extends AdminController
             return $this->redirect(handles('blupl/securex::approval'));
         }
     }
-
-
 
     /**
      * Update the role.
@@ -94,10 +90,8 @@ class ApprovalController extends AdminController
             return $this->redirect(handles('blupl/securex::approval'));
         }
 
-
         Flash::success($member->name.' Approved Successfully');
         return $this->redirect(handles('blupl/securex::approval/all'));
-
     }
 
     public function batchApproval(Request $request)

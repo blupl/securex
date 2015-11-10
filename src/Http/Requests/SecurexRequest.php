@@ -1,12 +1,12 @@
-<?php namespace Blupl\Security\Http\Requests;
+<?php namespace Blupl\Securex\Http\Requests;
 
 use App\Http\Requests\Request;
 
 /**
- * Class SecurityRequest
- * @package Blupl\Security\Http\Requests
+ * Class SecurexRequest
+ * @package Blupl\Securex\Http\Requests
  */
-class SecurityRequest extends Request {
+class SecurexRequest extends Request {
 
 	/**
 	 * Determine if the user is authorized to make this request.

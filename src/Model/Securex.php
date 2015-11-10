@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Securex extends Model {
 
-    protected $table = 'security';
+    protected $table = 'securex';
 
     public function roleName($role){
         $roles =[

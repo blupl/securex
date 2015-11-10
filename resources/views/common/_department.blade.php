@@ -7,7 +7,7 @@
 'ccdm'=>'CCDM',
 'cricket-operations'=>'Cricket Operations',
 'disciplinary'=>'Disciplinary',
-'host'=>'Facilities Management',
+'facilities'=>'Facilities Management',
 'finance'=>'Finance',
 'development'=>'Game Development',
 'grounds'=>'Grounds',

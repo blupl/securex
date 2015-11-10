@@ -84,9 +84,10 @@ class HomeController extends AdminController
     /**
      * Update the role.
      *
-     * @param  int  $roles
-     *
+     * @param $securex
      * @return mixed
+     * @internal param int $roles
+     *
      */
     public function update($securex)
     {
@@ -96,9 +97,10 @@ class HomeController extends AdminController
     /**
      * Request to delete a role.
      *
-     * @param  int  $roles
+     * @param $securex
+     * @return mixed ;
+     * @internal param int $roles
      *
-     * @return mixed;
      */
     public function delete($securex)
     {
@@ -108,9 +110,10 @@ class HomeController extends AdminController
     /**
      * Request to delete a role.
      *
-     * @param  int  $roles
-     *
+     * @param $securex
      * @return mixed
+     * @internal param int $roles
+     *
      */
     public function destroy($securex)
     {
@@ -175,9 +178,10 @@ class HomeController extends AdminController
     /**
      * Response when storing user succeed.
      *
-     * @param  \Orchestra\Model\Role  $role
-     *
+     * @param Securex $securex
      * @return mixed
+     * @internal param \Orchestra\Model\Role $role
+     *
      */
      public function storeSucceed(securex $securex)
      {
@@ -244,9 +248,10 @@ class HomeController extends AdminController
     /**
      * Response when updating role succeed.
      *
-     * @param  \Orchestra\Model\Role  $role
-     *
+     * @param Securex $securex
      * @return mixed
+     * @internal param \Orchestra\Model\Role $role
+     *
      */
     public function destroySucceed(securex $securex)
     {

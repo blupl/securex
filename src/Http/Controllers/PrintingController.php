@@ -45,7 +45,6 @@ class PrintingController extends AdminController
     {
         $member = Securex::find($memberId);
         $member->role = $member->roleName($member->role);
-        $member->organization = '';
         $member->extension = 'securex';
 
         return view('common.printing.print-single', compact('member'));
@@ -57,7 +56,6 @@ class PrintingController extends AdminController
         $mem->role = $mem->roleName($mem->role);
         $mem->zone= $mem->zone->toArray();
         $mem->grade= $mem->grade;
-        $mem->organization = '';
         $members[] = $mem->toArray();
 
         $pdf = App::make('dompdf');
@@ -69,13 +67,13 @@ class PrintingController extends AdminController
 
     public function batchPrinting(Request $request)
     {
-//        dd(Host::find($request->member[0])->zone);
+//        dd(Securex::find($request->member[0])->zone);
         foreach($request->member as $member) {
             $mem = Securex::find($member);
             $mem->role = $mem->roleName($mem->role);
-            $mem->organization = '';
             $mem->zone= $mem->zone->toArray();
             $mem->grade= $mem->grade;
+            $mem->organization = '';
             $members[] = $mem->toArray();
         }
         $pdf = App::make('dompdf');

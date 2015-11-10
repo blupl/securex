@@ -25,7 +25,7 @@
                     <i class="fa fa-print"></i>
                     <p class="box-title">Print</p>
                 </a>
-                <a class="col-md-offset-1 broken" href="{{-- handles('blupl/host::printing/pdf/'.$member->id) --}}">
+                <a class="col-md-offset-1 broken" href="{{-- handles('blupl/securex::printing/pdf/'.$member->id) --}}">
                     <i class="fa fa-save"></i>
                     <p class="box-title">Save As PDF</p>
                 </a>
@@ -67,10 +67,6 @@
                             <p>{{ $member->work_station }}<p>
                         </div>
                         <div class="col-sm-4">
-                            <label for="exampleInputRole1">Select card collection point</label>
-                            <p>{{ $member->card_collection_point }}<p>
-                        </div>
-                        <div class="col-sm-4">
                             <label for="exampleInputEmail1">E-Mail ID</label>
                             <p>{{ $member->email }}<p>
                         </div>
@@ -94,7 +90,6 @@
                         {!! Form::hidden('member_id[]', $member->id) !!}
                         @for($x=1; $x <= 6; $x++)
                             <label style="margin-right: 25px;">
-                                {{--<input  name="zone[{{ $member->id }}][{{ $x }}]" type="checkbox" value="{{ $x }}"> --}}
                                 {!! Form::checkbox( 'zone[]', $x, false,['class'=>'minimal']) !!} Zone # {{ $x }}
                             </label>
                         @endfor
